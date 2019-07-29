@@ -1,0 +1,14 @@
+[
+    {
+        "Header": "Id",
+        "accessor": "id"
+    },
+    {
+        "Header": "FIRST NAME",
+        "accessor": "First"
+    },
+    {
+        "Header": "Last Name",
+        "accessor": "Last"
+    }
+]

@@ -1,0 +1,13 @@
+
+
+@media only screen and (max-width: 1112px) and (orientation: landscape) 
+  {
+    .carousel.carousel-slider{
+        margin-left: 2px;
+    }
+  }
+  .carousel .slide img
+  {
+    height: 440px;
+   
+  }

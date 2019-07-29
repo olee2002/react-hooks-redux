@@ -1,0 +1,44 @@
+
+details.oncss {
+  border: 1px solid #ccc;
+
+
+}
+details.oncss:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+
+details.oncss summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 20px;
+  background: #e4e4e4;
+  color: #242323;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+details.oncss summary::-webkit-details-marker {
+  display: none;
+}
+
+
+details.oncss p {
+  margin: 0;
+  padding: 20px;
+}
+
+.jss361{
+  margin-left: 0;
+}
+
+
+
+
+  @media only screen and (max-width: 1112px) and (orientation: landscape) 
+  { 
+    .jss361{
+      margin-left: 0;
+    }
+  }

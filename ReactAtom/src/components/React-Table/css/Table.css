@@ -1,0 +1,134 @@
+.App 
+{
+  text-align: center;
+
+}
+
+.App-logo 
+{
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header 
+{
+  background-color: #f5f7fa;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link 
+{
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin 
+{
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.btn1
+{
+    width: 15%;
+    color: rgb(241, 31, 3);
+    margin-left: 10px;
+    left: 0;
+    position: absolute;
+}
+
+.btn2
+{
+  width: 15%;
+  margin-right: 10px;
+  right: 0;
+  position: absolute;
+  color: rgb(241, 31, 3);
+  right: 0;
+  
+}
+
+
+.home
+{
+  height: 80px;
+  margin: 0;
+  padding: 0;
+  
+}
+
+#Id
+{
+  color: black;
+}
+
+.emp
+{
+  border:2px solid rgb(80, 179, 204);
+  height:400px;
+  width:100%;
+
+}
+
+
+.stud
+{
+  border:2px solid black;
+  height:400px;
+  width:100%;
+
+}
+
+h1
+{
+  color:black;
+  font-size: 20px;
+}
+
+h2
+{
+
+  color:black;
+ 
+}
+
+.btn5
+{
+  top:0;
+  position: absolute;
+  margin-top: 120px;
+  left: 0;
+  margin-left: 395px;
+}
+
+@media only screen and (max-width: 1112px) and (orientation: landscape) 
+{ 
+
+        .btn5
+        {
+          top:0;
+          position: absolute;
+          margin-top: 120px;
+          left: 0;
+          margin-left: 260px;
+        }
+  }
+
+
+
+
+
+
+

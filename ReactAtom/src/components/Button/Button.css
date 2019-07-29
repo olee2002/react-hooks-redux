@@ -1,0 +1,294 @@
+.button {
+ 
+  margin-top: 10px;
+    font-size: 18px;
+    color: black;
+    padding: 10px 30px;  
+    
+}
+ 
+.toggled {
+  background-color:rgb(186, 197, 34);
+  color: white;
+  height: 50px;
+  
+    
+}
+
+
+.int{
+  width: 150px;
+  height: 50px;
+}
+
+
+
+
+.newA
+{
+    margin-left: 150px;
+    margin-top: 10px;
+    height: 180px;
+    width: 300px;
+    border: 1px solid black;
+}
+
+
+
+
+.newC
+{
+    margin-left: 200px;
+    margin-top: 350px;
+    height: 230px;
+    width: 200px;
+    border: 1px solid black;
+    top: 0;
+    position: absolute;
+}
+
+
+.btn {
+  background-color: #237fbc;
+  border: 1px;
+  color: white;
+  padding: 12px 40px;
+  font-size: 14px;
+  cursor: pointer;
+margin-top: 20px;
+margin: 4px 2px;
+}
+
+
+.btn:hover {
+  background-color: #237fbc;
+}
+
+
+.newD
+{
+    margin-left: 500px;
+    margin-top: 350px;
+    height: 230px;
+    width: 450px;
+    border: 1px solid black;
+    top: 0;
+    position: absolute;
+}
+
+.buttons {
+  background-color: #237fbc; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.buttons1 {border-radius: 2px;}
+.buttons2 {border-radius: 4px;}
+.buttons3 {border-radius: 8px;}
+.buttons4 {border-radius: 12px;}
+.buttons5 {border-radius: 50%;}
+
+
+/* *********************************** */
+
+.tabs {
+  max-width: 90%;
+  float: none;
+  list-style: none;
+  padding: 0;
+  border-bottom: 4px solid #ccc;
+}
+.tabs:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.tabs input[type=radio] {
+  display:none;
+}
+.tabs label {
+  display: block;
+  float: left;
+  width: 33.3333%;
+  color: #ccc;
+  font-size: 30px;
+  font-weight: normal;
+  text-decoration: none;
+  text-align: center;
+  line-height: 2;
+  cursor: pointer;
+  box-shadow: inset 0 4px #ccc;
+  border-bottom: 4px solid #ccc;
+  -webkit-transition: all 0.5s; /* Safari 3.1 to 6.0 */
+  transition: all 0.5s;
+}
+.tabs label span {
+  display: none;
+}
+.tabs label i {
+  padding: 5px;
+  margin-right: 0;
+}
+.tabs label:hover {
+  color: #3498db;
+  box-shadow: inset 0 4px #3498db;
+  border-bottom: 4px solid #3498db;
+}
+.tab-content {
+  display: none;
+  width: 80%;
+  float: left;
+  padding: 15px;
+  box-sizing: border-box;
+  background-color:#ffffff;
+
+  
+}
+
+
+.tab-content * {
+  -webkit-animation: scale 0.7s ease-in-out;
+  -moz-animation: scale 0.7s ease-in-out;
+  animation: scale 0.7s ease-in-out;
+}
+@keyframes scale {
+0% {
+  transform: scale(0.9);
+  opacity: 0;
+  }
+50% {
+  transform: scale(1.01);
+  opacity: 0.5;
+  }
+100% {
+  transform: scale(1);
+  opacity: 1;
+}
+
+}
+.tabs [id^="tab"]:checked + label {
+  background: #FFF;
+  box-shadow: inset 0 4px #3498db;
+  border-bottom: 4px solid #3498db;
+  color: #3498db;
+}
+#tab1:checked ~ #tab-content1,
+#tab2:checked ~ #tab-content2,
+#tab3:checked ~ #tab-content3 {
+  display: block;
+}
+#tab-content1{
+  margin-left: 125px;
+}
+
+#tab-content2{
+  margin-left: 135px;
+}
+
+#tab-content3{
+  margin-left: 145px;
+}
+
+@media (min-width: 768px) {
+  .tabs i {
+      padding: 5px;
+     
+  }
+  .tabs label span {
+      display: inline-block;
+  }
+  .tabs {
+  max-width: 950px;
+  
+  }
+}
+
+@media only screen and (max-width: 1112px) and (orientation: landscape) 
+  { 
+  
+    #tab-content1{
+      margin-left: 50px;
+    }
+    
+    #tab-content2{
+      margin-left: 155px;
+    }
+    
+    #tab-content3{
+      margin-left: 165px;
+    }
+  }
+
+
+  /* ******************* */
+
+  h1{font-size:24px; font-weight:normal; margin:0.4em 0;}
+
+.container .row { float: left; clear: both }
+.container .col { float: left; margin: 0 50px 1.2em; padding-right: 1.2em; padding-left: 1.2em; }
+.container .col.one, .container .col.two, .container .col.three, .container .col.four, .container .col.five, .container .col.six, .container .col.seven, .container .col.eight, .container .col.nine, .container .col.ten, .container .col.eleven, .container .col.twelve { width: 100%; }
+
+
+
+@media screen and (min-width: 767px) {
+  
+  .container .row{ float:left; clear:both;}
+  .container .col{float: left; margin: 0 58px 1em; padding-right: .5em; }
+  .container .col.three { width: 24.99%; }
+  .container .col.four { width: 23%; }
+}
+
+/*All the button styles*/
+
+* {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+a{text-decoration:none;}
+
+/********************
+GENERIC BUTTON STYLES
+********************/
+.btn {font-size: 16px; white-space:nowrap;  padding:.8em 1.5em; font-family: Open Sans, Helvetica,Arial,sans-serif; line-height:18px; display: inline-block;zoom: 1; color: #fff; text-align: center; position:relative; -webkit-transition: border .25s linear, color .25s linear, background-color .25s linear; transition: border .25s linear, color .25s linear, background-color .25s linear;}
+
+
+/*DARK BLUE BUTTON STYLES*/		
+.btn.btn-dark-blue{background-color: #237fbc; border-color: #237fbc; -webkit-box-shadow: 0 3px 0 #1a5c87; box-shadow: 0 3px 0 #1a5c87;}
+.btn.btn-dark-blue:hover{background-color:#166ea8;}
+.btn.btn-dark-blue:active{ top: 3px; outline: none; -webkit-box-shadow: none; box-shadow: none;}
+
+
+/********************
+SOCIAL BUTTON STYLES
+********************/
+
+/*FACEBOOK*/
+.btn.btn-facebook{background-color: #2479b6; border-color: #2479b6; -webkit-box-shadow: 0 3px 0 #1c6394; box-shadow: 0 3px 0 #1c6394;}
+.btn.btn-facebook:active{top: 3px; outline: none; -webkit-box-shadow: none; box-shadow: none;}
+
+
+
+
+/*LinkedIn*/
+.btn.btn-linkedin{background-color: #0074ba; border-color: #0074ba; -webkit-box-shadow: 0 3px 0 #00497b; box-shadow: 0 3px 0 #00497b;}
+.btn.btn-linkedin:active{top: 3px; outline: none; -webkit-box-shadow: none; box-shadow: none;}
+
+
+
+
+/*RSS*/
+.btn.btn-rss{background-color: #f8a933; border-color: #f8a933; -webkit-box-shadow: 0 3px 0 #ab7422; box-shadow: 0 3px 0 #ab7422;}
+.btn.btn-rss:active{top: 3px; outline: none; -webkit-box-shadow: none; box-shadow: none;}
+
+/**********
+Icon styles
+**********/
+.btn i { line-height:22px;}
+.icon-only{padding: 1em;}
+.icon-only i{padding-right:0; font-size:22px; line-height:22px; }
+	
+
