@@ -7,8 +7,8 @@ body
 {
     background-image: url(./images/react_header_bg.png);
     background-position: top center;
-    background-repeat: no-repeat;
     overflow: hidden;
+    background-repeat: repeat-x;
 }
 
 .navbar-inverse 
