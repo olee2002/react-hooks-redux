@@ -94,7 +94,7 @@ let routes =
 
 function searchingFor(term) {
     return function (x) {
-        return x.displayName.toLowerCase().includes(term.toLowerCase()) || !term;
+        return x.displayName.toLowerCase().charAt(0).includes(term.toLowerCase()) || !term;
     }
 }
 
