@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './Main.css';
 import { BrowserRouter as Router, Route, NavLink, Switch } from 'react-router-dom';
 import Dialog from '../components/Dialoge/Dialoge';
+import About from '../components/About/About'
 import Textfield from '../components/Textfield/Textfield';
 import ReactTable from '../components/React-Table/ReactTable';
 import DatePicker from '../components/Date-picker/DatePicker';
@@ -153,8 +154,9 @@ export default class Main extends Component {
                                 <div className="first">
                                     <div className="pdf"></div>
                                 </div>
-                                <hr className="hr"></hr>
+                                {/*<hr className="hr"></hr>*/}
                                 <Switch>
+                                    <Route exact path="/" component={About} ></Route>
                                     <Route exact path="/Accordion" component={Accordian} ></Route>
                                     <Route exact path="/Button" component={Button} ></Route>
                                     <Route exact path="/Carousel" component={Carousel} ></Route>

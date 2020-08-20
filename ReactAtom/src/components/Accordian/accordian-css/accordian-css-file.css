@@ -3,7 +3,6 @@
   border-radius: 2px;
   max-width: 900px;
 
-
 }
 
 .accordion__item + .accordion__item {
@@ -65,10 +64,10 @@
 
 
 
-  
 
-@media only screen and (max-width: 1112px) and (orientation: landscape) 
-  { 
-  
-    
+
+@media only screen and (max-width: 1112px) and (orientation: landscape)
+  {
+
+
   }

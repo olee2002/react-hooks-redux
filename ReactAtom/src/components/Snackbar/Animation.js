@@ -5,7 +5,7 @@ import { SnackbarProvider, wrapComponent } from 'react-snackbar-alert';
 
 export default function CustomAnimationTimeoutExample() {
   return (
-    <SnackbarProvider animationTimeout={1000} position="bottom-right">
+    <SnackbarProvider animationTimeout={1000} position="top-right">
       <Container />
     </SnackbarProvider>
   );

@@ -12,7 +12,12 @@ import 'react-accessible-accordion/dist/fancy-example.css';
 
 export default function Example() {
     return (
-        <Accordion className="accordian">
+        <Accordion className="accordian" allowZeroExpanded>
+            <h2>Accordian</h2>
+            <hr className="hr"/>
+            <h4>An accordion is a lightweight container that may either stand alone or be connected to a larger surface, such as a card.</h4>
+            <h4>Accordions contain creation flows and allow lightweight editing of an element.</h4>
+            <hr className="hr"/>
             <AccordionItem>
                 <AccordionItemHeading>
                     <AccordionItemButton>

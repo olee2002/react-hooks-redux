@@ -4,7 +4,7 @@ import { SnackbarProvider, wrapComponent } from 'react-snackbar-alert';
 
 export default function StickyExample() {
   return (
-    <SnackbarProvider dismissable={true} sticky={true} position="bottom-right">
+    <SnackbarProvider dismissable={true} sticky={true} position="top-right">
       <Container />
     </SnackbarProvider>
   );

@@ -4,7 +4,7 @@ import { SnackbarProvider, wrapComponent } from 'react-snackbar-alert';
 
 export default function ThemeExample() {
   return (
-    <SnackbarProvider position="bottom-right">
+    <SnackbarProvider position="top-right">
       <Container />
     </SnackbarProvider>
   );

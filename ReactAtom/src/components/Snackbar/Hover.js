@@ -4,7 +4,7 @@ import { SnackbarProvider, wrapComponent } from 'react-snackbar-alert';
 
 export default function PauseOnHoverExample() {
   return (
-    <SnackbarProvider pauseOnHover={true} position="bottom-right">
+    <SnackbarProvider pauseOnHover={true} position="top-right">
       <Container />
     </SnackbarProvider>
   );
