@@ -10,11 +10,11 @@ class Search extends Component {
           <h4>The autocomplete is a normal text input enhanced by a panel of suggested options.</h4>
           <hr className="hr"/>
 
-              <h2>Country Search</h2>
-              <hr className="hr"/>
-              <h4>This is a basic example of search auto-complete which uses onChange event and fetches result</h4>
-              <hr className="hr"/>
-              <ComboBox/>
+          <h2>Country Search</h2>
+          <hr className="hr"/>
+          <h4>This is a basic example of search auto-complete which uses onChange event and fetches result</h4>
+          <hr className="hr"/>
+          <ComboBox/>
       </div>
     );
   }
