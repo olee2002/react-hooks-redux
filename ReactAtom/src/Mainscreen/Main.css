@@ -160,8 +160,8 @@ a:hover, a:focus {
 
 ul .list:hover
 {
-    /*background-color:#92A1Af !important;*/
-    /*color: #FFFFFF;*/
+    /*background-color:aliceblue !important;*/
+    color: deepskyblue;
     text-decoration: none;
     transition: all 0.3s;
 
@@ -170,8 +170,8 @@ ul .list:hover
 
 .select-box div.selected
 {
-    background-color: #92A1Af;
-    color: #FFFFFF !important;
+    background-color: aliceblue;
+    /*color: red;*/
     text-decoration: none;
     transition: all 0.3s;
 
@@ -208,6 +208,7 @@ ul .list:hover
     position: absolute;
     right: 0;
     margin-right: 10px;
+     cursor: pointer;
  }
 
 

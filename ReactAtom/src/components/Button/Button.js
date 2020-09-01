@@ -11,12 +11,12 @@ export default class Tab extends Component {
       <div>
         <div className="tabs">
 
-          <input type="radio" name="tabs" id="tab1" checked />
+          <input type="radio" name="tabs" id="tab1" defaultChecked />
           <label for="tab1">
             <span>Materialized</span>
           </label>
 
-          <input type="radio" name="tabs" id="tab2" />
+          <input type="radio" name="tabs" id="tab2"  />
           <label for="tab2">
             <span>Icon Button</span>
           </label>

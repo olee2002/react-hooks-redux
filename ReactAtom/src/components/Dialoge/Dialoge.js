@@ -7,6 +7,7 @@ import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import withMobileDialog from '@material-ui/core/withMobileDialog';
 import './Dialog.css'
+import {Accordion} from "react-accessible-accordion";
 
 
 class ResponsiveDialog extends React.Component {
@@ -27,8 +28,12 @@ class ResponsiveDialog extends React.Component {
 
     return (
       <div className="dialog">
-        <Button variant="outlined" color="primary" onClick={this.handleClickOpen}>
-          Open responsive dialog
+        <h2>Dialog</h2>
+        <hr className="hr"/>
+        <h4>A Dialog is a type of modal window that appears in front of app content to provide critical information or ask for a decision.</h4>
+        <hr className="hr"/>
+        <Button className="button" variant="outlined" color="primary" onClick={this.handleClickOpen}>
+          <h5>Open responsive dialog</h5>
         </Button>
         <Dialog
           fullScreen={fullScreen}
@@ -39,8 +44,8 @@ class ResponsiveDialog extends React.Component {
           <DialogTitle id="responsive-dialog-title">{"Use Google's location service?"}</DialogTitle>
           <DialogContent>
             <DialogContentText>
-              Let Google help apps determine location. This means sending anonymous location data to
-              Google, even when no apps are running.
+              <h5>Let Google help apps determine location. This means sending anonymous location data to
+                Google, even when no apps are running.</h5>
             </DialogContentText>
           </DialogContent>
           <DialogActions>

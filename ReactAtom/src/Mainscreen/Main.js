@@ -16,6 +16,8 @@ import Form from '../components/Form/Form';
 import Button from '../components/Button/Button';
 import List from '../components/List/List';
 import Carousel from '../components/Carousel/Carousel';
+import sample from '../Mainscreen/images/sample.pdf'
+import axios from 'axios';
 
 let routes =
     [
@@ -111,7 +113,7 @@ export default class Main extends Component {
                 selectedItem: this.props.items && this.props.items[0]
 
 
-            }
+            };
         this.searchHandler = this.searchHandler.bind(this);
 
     }
@@ -119,6 +121,27 @@ export default class Main extends Component {
     searchHandler(event) {
         this.setState({ term: event.target.value })
     }
+
+    download= () => {
+        axios.get(`${sample}`,{
+            method: 'GET',
+            mode: 'no-cors',
+            headers: {
+                'Access-Control-Allow-Origin': '*',
+                'Content-Type': '*/*',
+            },
+        })
+            .then(res => {
+                console.log(res);
+                const url = window.URL
+                    .createObjectURL(new Blob([res.data]));
+                    const link = document .createElement('a');
+                    link.href = url;
+                    link.setAttribute('download','AtomPortal.pdf');
+                    document.body.appendChild(link);
+                    link.click();
+            })
+    };
 
     selectedItem = (routes) => this.setState({
         selectedItem: routes,
@@ -152,7 +175,9 @@ export default class Main extends Component {
                             </div>
                             <div className="col-sm-8" >
                                 <div className="first">
-                                    <div className="pdf"></div>
+                                    <div className="pdf" onClick={this.download}>
+
+                                </div>
                                 </div>
                                 {/*<hr className="hr"></hr>*/}
                                 <Switch>

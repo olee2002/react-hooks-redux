@@ -4,13 +4,13 @@
   p:last-child {
     margin-bottom: 0;
   }
-  
+
   img {
     width: 30%;
     float: left;
     margin: 0 1em 0.5em 0;
   }
-  
+
   pre {
     margin-top: 4em;
     background-color: #f9f9f9;
@@ -18,17 +18,17 @@
     border: 1px solid #ddd;
     border-radius: 0.5em;
   }
- 
+
 .jss20
 {
   font-size: 16px !important;
 }
   /*** ACCORDION ***/
-  
+
   /* Header */
   .accordion > div > div:first-of-type {
     padding: 1em;
-    background-color: #3399cc;
+    background-color: #c1e6f9;
     color: black;
     text-transform: uppercase;
     user-select: none;
@@ -37,15 +37,15 @@
     border-radius: 0.5em;
     box-shadow: 0 -10px 30px 2px rgba(0, 0, 0, 0.1) inset;
   }
-  
-  
+
+
   /* Content */
   .accordion > div > div:last-of-type {
     background-color: #f9f9f9;
     margin: 0 0.5em;
     box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.2);
   }
-  
+
   /* Inner */
   .accordion .accordion-item {
     padding: 1em;
@@ -71,7 +71,7 @@
 }
 
 
-@media only screen and (max-width: 1112px) and (orientation: landscape) 
+@media only screen and (max-width: 1112px) and (orientation: landscape)
   {
-   
+
   }

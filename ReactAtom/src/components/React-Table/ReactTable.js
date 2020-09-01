@@ -1,45 +1,98 @@
-import React, { Component } from 'react';
-import SimpleTable from "./components/SimpleTable";
-import SortingSelecting from "./components/SortingSelecting";
-import Collapsible from "./components/Collapsible";
-import '../React-Table/css/Table.css';
-class ReactTable extends Component {
+import React, {Component,Fragment} from 'react'
+import ReactBoostrapTable from "./components/React_Boostrap_Table";
+import {
+    Accordion,
+    AccordionItem,
+    AccordionItemButton,
+    AccordionItemHeading,
+    AccordionItemPanel
+} from "react-accessible-accordion";
+import React_AgGrid_Table from "./components/React_AgGrid_Table";
+import React_AgGrid_API from "./components/React_AgGrid_API";
+import Table from '../Accordian/Table';
+// import '../Accordian/accordian-css/accordian-css-file.css';
+// import 'react-accessible-accordion/dist/fancy-example.css';
+export default class ReactTables extends Component {
     render() {
-        return (
-            <div>
-                <h2>React Table</h2>
+        return(
+            <Fragment>
+                <h2>Using react-bootstrap-table2</h2>
                 <hr className="hr"/>
-                <h4>Tables display information in a way that’s easy to scan, so that users can look for patterns and insights. They can be embedded in primary content, such as cards.</h4>
-                <h4>Tables display sets of data. They can be fully customized.</h4>
+                <h3>Functionalities:</h3>
+                <ul>
+                    <li>Sorting</li>
+                    <li>Number, text filter</li>
+                    <li>Selection</li>
+                    <li>Export CSV</li>
+                </ul>
                 <hr className="hr"/>
+                <Accordion className="accordian" allowZeroExpanded>
+                <AccordionItem>
+                    <AccordionItemHeading>
+                        <AccordionItemButton>
+                            React Table using React Bootstrap
+                        </AccordionItemButton>
+                    </AccordionItemHeading>
+                    <AccordionItemPanel>
+                        <ReactBoostrapTable/>
+                    </AccordionItemPanel>
+                </AccordionItem>
+                </Accordion>
 
-                <div>
-                <h2>Simple Table</h2>
+
+                <h2>Using ag-grid-react</h2>
                 <hr className="hr"/>
-                <h4>A simple example with no frills.</h4>
+                <h3>Functionalities:</h3>
+                <ul>
+                    <li>Sorting</li>
+                    <li>filter</li>
+                    <li>Selection</li>
+                    <li>Fetching row data from API</li>
+                </ul>
                 <hr className="hr"/>
-                <SimpleTable/>
-                </div>
-                {/*<hr className="hr"/>*/}
-                <div>
-                <h2>Sorting & Selecting</h2>
+                <Accordion className="accordian" allowZeroExpanded>
+                <AccordionItem>
+                    <AccordionItemHeading>
+                        <AccordionItemButton>
+                            React Table using Ag Grid
+                        </AccordionItemButton>
+                    </AccordionItemHeading>
+                    <AccordionItemPanel>
+                        <hr className="hr"/>
+                        <h4>In the below table, Sorting, filtering and selection has been implemented.</h4>
+                        <hr className="hr"/>
+                        <React_AgGrid_Table></React_AgGrid_Table>
+                        <hr className="hr"/>
+                        <h4>Fetching data from API</h4>
+                        <hr className="hr"/>
+
+                        <React_AgGrid_API></React_AgGrid_API>
+                    </AccordionItemPanel>
+                </AccordionItem>
+            </Accordion>
+
+
+                <h2>Using react-table</h2>
                 <hr className="hr"/>
-                <h4>The Table has been given a fixed width to demonstrate horizontal scrolling. In order to prevent the pagination controls from scrolling, the TablePagination component is used outside of the Table.</h4>
-                <h4>This example demonstrates the use of Checkbox and clickable rows for selection, with a custom Toolbar. It uses the TableSortLabel component to help style column headings..</h4>
+                <h3>Functionalities:</h3>
+                <ul>
+                    <li>Sorting</li>
+                    <li>Pagination</li>
+                </ul>
                 <hr className="hr"/>
-                <SortingSelecting/>
-                </div>
-                {/*<hr className="hr"/>*/}
-                <div>
-                <h2>Collapsible table</h2>
-                <hr className="hr"/>
-                <h4>An example of a table with expandable rows, revealing more information. It utilizes the Collapse component.</h4>
-                <hr className="hr"/>
-                <Collapsible/>
-                </div>
-            </div>
-        );
+                <Accordion className="accordian" allowZeroExpanded>
+                    <AccordionItem>
+                        <AccordionItemHeading>
+                            <AccordionItemButton>
+                                React Table using React-table
+                            </AccordionItemButton>
+                        </AccordionItemHeading>
+                        <AccordionItemPanel>
+                            <Table></Table>
+                        </AccordionItemPanel>
+                    </AccordionItem>
+                </Accordion>
+            </Fragment>
+        )
     }
 }
-
-export default ReactTable;
