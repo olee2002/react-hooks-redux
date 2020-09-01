@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import ComboBox from "./ComboBox";
-import CountrySelect from "./CountrySearch";
-import FreeSoloCreateOptionDialog from "./Creatable";
 
 class Search extends Component {
   render() {
@@ -17,9 +15,6 @@ class Search extends Component {
               <h4>This is a basic example of search auto-complete which uses onChange event and fetches result</h4>
               <hr className="hr"/>
               <ComboBox/>
-
-
-
       </div>
     );
   }
