@@ -1,26 +1,27 @@
 .Logo {
   width: 50px;
   position: relative;
-  top: 50px;
 }
 
 .ToDo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   border: 1px solid white;
   width: 80vw;
-  height: auto;
+  height: 60vh;
   box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.3);
   background: #fdfdfd;
-  padding-bottom: 60px;
+  padding: 50px;
   margin: 40px auto;
 }
 
 .ToDo-Header {
   color: black;
-  font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-weight: 400;
   text-transform: uppercase;
-  margin: 70px auto 0px;
+  margin: 20px auto 20px;
 }
 
 .ToDo-Subheader {
@@ -32,19 +33,13 @@
 }
 
 .ToDo-Add {
-  color: white;
   font-size: 2em;
   width: 40px;
   height: 40px;
-  padding: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  background: #73ff73;
-  border-radius: 10px;
-  box-shadow: 1px 1px 1px #47a947;
-  margin: 20px auto 0;
 }
 
 .ToDo-Add:hover {
@@ -55,4 +50,28 @@
 .ToDo-Container {
   width: 80%;
   margin: 0 auto;
+}
+
+.ToDoInputContainer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   margin-bottom: 30px;
+}
+
+.ToDo-Content {
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+}
+
+input {
+  width: 60%;
+  padding: 10px;
+  font-size: 1em;
+  margin-right: 10px;
+  border: 1.5px solid black;
+  border-radius: 5px;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
 }

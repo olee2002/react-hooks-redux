@@ -41,21 +41,19 @@ const ToDo = (props) => {
 
   return (
     <div className="ToDo">
-      <img className="Logo" src={ReduxLogo} alt="logo" />
-      <h1 className="ToDo-Header">Redux To Do</h1>
+      <h1 className="ToDo-Header">To Do List</h1>
+      <div className="ToDoInputContainer">
+          <input type="text" value={todo} onChange={handleInput} onKeyPress={handleKeyPress} />
+          <button className="ToDo-Add" onClick={createNewToDoItem}>
+            +
+          </button>
+        </div>
       <div className="ToDo-Container">
         <div className="ToDo-Content">
           {list &&
             list.map((item) => {
               return <ToDoItem key={item.id} item={item} deleteItem={deleteItem} />;
             })}
-        </div>
-
-        <div className="ToDoInput">
-          <input type="text" value={todo} onChange={handleInput} onKeyPress={handleKeyPress} />
-          <button className="ToDo-Add" onClick={createNewToDoItem}>
-            +
-          </button>
         </div>
       </div>
     </div>

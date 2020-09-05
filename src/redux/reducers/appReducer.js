@@ -1,7 +1,7 @@
 import { ADD_ITEM, DELETE_ITEM } from "../actionTypes";
 
 const initialState = {
-  list: [{ id: 1, text: "clean the house" }, { id: 2, text: "buy milk" }]
+  list: [{ id: 1, text: "build a react hook app" }, { id: 2, text: "add redux" }, { id: 3, text: "clean the keyboard" }]
 };
 
 export default function appReducer(state = initialState, action) {
