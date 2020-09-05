@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-![alt text](http://url/to/todolist.png)
+![alt text](https://github.com/Rushikesh-Dhule/React-JS/blob/react-hooks-redux/public/todolist.png)
 
 
 ## Available Scripts
