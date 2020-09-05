@@ -1,11 +1,11 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This To-Do-List project is prepared for Atos developers to jump start with a React Hooks & Redux app. It is bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ![alt text](https://github.com/Rushikesh-Dhule/React-JS/blob/react-hooks-redux/public/todolist.png)
-
 
 ## Available Scripts
 
 In the project directory, you can run:
+
 ### `npm install`
 
 ### `npm start`
