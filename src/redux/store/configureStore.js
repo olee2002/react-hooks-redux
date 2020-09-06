@@ -1,6 +1,15 @@
-import { createStore } from "redux";
-import rootReducer from "../reducers";
+import { createStore, applyMiddleware, compose } from 'redux'
+// Thunk middleware allows you to handle asynchronous actions.
+import ReduxThunk from 'redux-thunk'
+
+import rootReducer from '../reducers'
+
+const middleware = [ReduxThunk];
 
 export default function configureStore() {
-  return createStore(rootReducer);
-}
+   return createStore(rootReducer, 
+      compose(
+          applyMiddleware(...middleware),
+          window.devToolsExtension ? window.devToolsExtension() : f => f
+      ))
+};

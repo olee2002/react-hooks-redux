@@ -1,12 +1,21 @@
-import React, { useState } from "react";
-import ReduxLogo from "../assets/redux.png";
-import ToDoItem from "./ToDoItem";
-import "./ToDo.css";
+import React, { useState, useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+
+import ToDoItem from './ToDoItem';
+import './ToDo.css';
 
 const ToDo = (props) => {
-  const { list, redux_add, redux_delete } = props;
-  const [todo, setTodo] = useState("");
+  const { list, redux_add, redux_delete, redux_fetch_todo_list } = props;
+  const dispatch = useDispatch();
+  const [todo, setTodo] = useState('');
 
+ useEffect(()=>{
+   const fetchToDoList = ()=>{
+      redux_fetch_todo_list();
+     }
+     fetchToDoList();
+ }, [])
+ 
   const generateId = () => {
     if (list && list.length > 1) {
       return Math.max(...list.map((t) => t.id)) + 1;
@@ -18,15 +27,15 @@ const ToDo = (props) => {
   const createNewToDoItem = () => {
     //validate todo
     if (!todo) {
-      return alert("Please enter a todo!");
+      return alert('Please enter a todo!');
     }
     const newId = generateId();
-    redux_add({ id: newId, text: todo });
-    setTodo("");
+    redux_add({ id: newId, title: todo });
+    setTodo('');
   };
 
   const handleKeyPress = (e) => {
-    if (e.key === "Enter") {
+    if (e.key === 'Enter') {
       createNewToDoItem();
     }
   };
@@ -39,22 +48,22 @@ const ToDo = (props) => {
     redux_delete(todo.id);
   };
 
+  console.log('list', list)
+
   return (
-    <div className="ToDo">
-      <h1 className="ToDo-Header">To Do List</h1>
-      <div className="ToDoInputContainer">
-          <input type="text" value={todo} onChange={handleInput} onKeyPress={handleKeyPress} />
-          <button className="ToDo-Add" onClick={createNewToDoItem}>
+    <div className='ToDo'>
+      <h1 className='ToDo-Header'>To Do List</h1>
+      <div className='ToDoInputContainer'>
+          <input type='text' value={todo} onChange={handleInput} onKeyPress={handleKeyPress} />
+          <button className='ToDo-Add' onClick={createNewToDoItem}>
             +
           </button>
         </div>
-      <div className="ToDo-Container">
-        <div className="ToDo-Content">
+      <div className='ToDo-Container'>
           {list &&
             list.map((item) => {
-              return <ToDoItem key={item.id} item={item} deleteItem={deleteItem} />;
+              return <ToDoItem key={item && item.id} item={item} deleteItem={deleteItem} />;
             })}
-        </div>
       </div>
     </div>
   );

@@ -10,10 +10,10 @@
   text-align: center;
   border: 1px solid white;
   width: 80vw;
-  height: 60vh;
+  height: 80vh;
   box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.3);
   background: #fdfdfd;
-  padding: 50px;
+  padding: 20px;
   margin: 40px auto;
 }
 
@@ -50,6 +50,9 @@
 .ToDo-Container {
   width: 80%;
   margin: 0 auto;
+  overflow:scroll;
+  max-height: 100vh;
+  padding-bottom: 30px;
 }
 
 .ToDoInputContainer {
@@ -58,12 +61,6 @@
    align-items: center;
    width: 100%;
    margin-bottom: 30px;
-}
-
-.ToDo-Content {
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
 }
 
 input {

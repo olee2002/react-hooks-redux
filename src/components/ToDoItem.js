@@ -6,7 +6,7 @@ const ToDoItem = (props) => {
 
   return (
     <div className="ToDoItem">
-      <p className="ToDoItem-Text">{item.text}</p>
+      <p className="ToDoItem-Text">{item && item.title}</p>
       <button className="ToDoItem-Delete" onClick={() => deleteItem(item)}>
         -
       </button>

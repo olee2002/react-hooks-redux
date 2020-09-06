@@ -1,4 +1,5 @@
-import { ADD_ITEM, DELETE_ITEM } from "../actionTypes";
+import { ADD_ITEM, DELETE_ITEM } from '../actionTypes';
+import { fetchToDoList } from './appActionCreators';
 
 const redux_add = (todo) => ({
   type: ADD_ITEM,
@@ -10,9 +11,13 @@ const redux_delete = (id) => ({
   payload: id
 });
 
+// this is async action from action creator
+const redux_fetch_todo_list = fetchToDoList;
+
 const appActions = {
   redux_add,
-  redux_delete
+  redux_delete,
+  redux_fetch_todo_list
 };
 
 export default appActions;
