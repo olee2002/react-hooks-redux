@@ -48,8 +48,6 @@ const ToDo = (props) => {
     redux_delete(todo.id);
   };
 
-  console.log('list', list)
-
   return (
     <div className='ToDo'>
       <h1 className='ToDo-Header'>To Do List</h1>

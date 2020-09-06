@@ -1,4 +1,4 @@
-This To-Do-List project is prepared for Atos developers to jump start with a React Hooks & Redux app. It is bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This branch is prepared for Atos developers to jump start with a React Hooks & Redux app. It is bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ![alt text](https://github.com/Rushikesh-Dhule/React-JS/blob/react-hooks-redux/public/todolist.png)
 
