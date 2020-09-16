@@ -1,6 +1,7 @@
 import React from "react";
 import "./ToDoItem.css";
 
+// simple functional component for an individual todo item.
 const ToDoItem = (props) => {
   const { item, deleteItem } = props;
 
