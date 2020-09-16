@@ -26,5 +26,6 @@ The details regarding react hooks & redux set up are explained in the files.
 
 
 ### Authors
+Please reach out to us for any comments or questions
 - Vibha Pandey @ vibha.2.pandey@atos.net
-- Okhyun Lee @ okhyun.lee@atos.net
+- Okhyun Lee (O'lee) @ okhyun.lee@atos.net
