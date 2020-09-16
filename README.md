@@ -25,6 +25,6 @@ The details regarding react hooks & redux set up are explained in the files.
 ![alt text](https://github.com/Rushikesh-Dhule/React-JS/blob/react-hooks-redux/public/file-structure.png)
 
 
-### authors
-Vibha Pandey @ vibha.2.pandey@atos.net
-Okhyun Lee @ okhyun.lee@atos.net
+### Authors
+- Vibha Pandey @ vibha.2.pandey@atos.net
+- Okhyun Lee @ okhyun.lee@atos.net
