@@ -12,10 +12,7 @@ const ToDo = (props) => {
   // using useEffect to call 'redux_fetch_todo_list()'. fetchToDoList is just a wrapper can be skipped.
   // but if you need any additional actions you can pass them before the action is called.
  useEffect(()=>{
-   const fetchToDoList = ()=>{
       redux_fetch_todo_list();
-     }
-     fetchToDoList();
  }, [])
  
   const generateId = () => {
@@ -61,7 +58,7 @@ const ToDo = (props) => {
         </div>
       <div className='ToDo-Container'>
           {list &&
-            list.map((item) => {
+            list.map((item, i) => {
               return <ToDoItem key={item && item.id} item={item} deleteItem={deleteItem} />;
             })}
       </div>
