@@ -5,7 +5,7 @@ import configureStore from "./redux/store/configureStore";
 import App from "./App";
 
 const store = configureStore();
-// Provider is a redux wrapper tag to store states in the store in the app level.
+// Provider is a redux wrapper to store states in the store in the app level.
 ReactDOM.render(
   <Provider store={store}>
     <App />
