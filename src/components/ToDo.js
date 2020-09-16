@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
 
 import ToDoItem from './ToDoItem';
 import './ToDo.css';
 
 const ToDo = (props) => {
+  // listing actions from props
   const { list, redux_add, redux_delete, redux_fetch_todo_list } = props;
-  const dispatch = useDispatch();
+  // setting todo state with useState hooks
   const [todo, setTodo] = useState('');
 
+  // using useEffect to call 'redux_fetch_todo_list()'. fetchToDoList is just a wrapper can be skipped.
+  // but if you need any additional actions you can pass them before the action is called.
  useEffect(()=>{
    const fetchToDoList = ()=>{
       redux_fetch_todo_list();
