@@ -1,5 +1,6 @@
 import { ADD_ITEM, DELETE_ITEM, FETCH_TODO_LIST } from '../actionTypes'
 
+// initialState has to be set for reducer
 const initialState = {
    list: [
       { id: 1, title: 'build a react hook app' },
@@ -8,6 +9,7 @@ const initialState = {
    ],
 }
 
+// reducer take state and action as args, depending on the action.type update the store with action.payload
 export default function appReducer(state = initialState, action) {
    switch (action.type) {
       case ADD_ITEM:
