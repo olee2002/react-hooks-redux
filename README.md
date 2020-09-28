@@ -1,6 +1,6 @@
-This branch is prepared for Atos developers to jump start with a React Hooks & Redux app. It is bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This branch is prepared for developers to jump start with a React Hooks & Redux app. It is bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-![alt text](https://github.com/Rushikesh-Dhule/React-JS/blob/react-hooks-redux/public/todolist.png)
+![alt text](https://github.com/olee2002/react-hooks-redux/blob/react-hooks-redux/public/todolist.png)
 
 ## Available Scripts
 
@@ -21,10 +21,9 @@ Below is the file structure of the current app which is one of the ideal ways to
 
 The details regarding react hooks & redux set up are explained in the files.
 
-![alt text](https://github.com/Rushikesh-Dhule/React-JS/blob/react-hooks-redux/public/file-structure.png)
+![alt text](https://github.com/olee2002/react-hooks-redux/blob/react-hooks-redux/public/file-structure.png)
 
 
 ### Authors
 Please reach out to us for any comments or questions
-- Vibha Pandey @ vibha.2.pandey@atos.net
-- Okhyun Lee (O'lee) @ okhyun.lee@atos.net
+- Okhyun Lee (O'lee) @ babylee2002@gmail.com
