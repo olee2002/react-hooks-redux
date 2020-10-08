@@ -1,63 +1,74 @@
-import React, { useState } from "react";
-import ReduxLogo from "../assets/redux.png";
-import ToDoItem from "./ToDoItem";
-import "./ToDo.css";
+import React, { useState } from 'react'
+import ReduxLogo from '../assets/redux.png'
+import ToDoItem from './ToDoItem'
+import './ToDo.css'
 
 const ToDo = (props) => {
-  const { list, redux_add, redux_delete } = props;
-  const [todo, setTodo] = useState("");
+   const { list, redux_add, redux_delete } = props
+   const [todo, setTodo] = useState('')
 
-  const generateId = () => {
-    if (list && list.length > 1) {
-      return Math.max(...list.map((t) => t.id)) + 1;
-    } else {
-      return 1;
-    }
-  };
+   const generateId = () => {
+      if (list && list.length > 1) {
+         return Math.max(...list.map((t) => t.id)) + 1
+      } else {
+         return 1
+      }
+   }
 
-  const createNewToDoItem = () => {
-    //validate todo
-    if (!todo) {
-      return alert("Please enter a todo!");
-    }
-    const newId = generateId();
-    redux_add({ id: newId, text: todo });
-    setTodo("");
-  };
+   const createNewToDoItem = () => {
+      //validate todo
+      if (!todo) {
+         return alert('Please enter a todo!')
+      }
+      const newId = generateId()
+      redux_add({ id: newId, text: todo })
+      setTodo('')
+   }
 
-  const handleKeyPress = (e) => {
-    if (e.key === "Enter") {
-      createNewToDoItem();
-    }
-  };
+   const handleKeyPress = (e) => {
+      if (e.key === 'Enter') {
+         createNewToDoItem()
+      }
+   }
 
-  const handleInput = (e) => {
-    setTodo(e.target.value);
-  };
+   const handleInput = (e) => {
+      setTodo(e.target.value)
+   }
 
-  const deleteItem = (todo) => {
-    redux_delete(todo.id);
-  };
+   const deleteItem = (todo) => {
+      redux_delete(todo.id)
+   }
 
-  return (
-    <div className="ToDo">
-      <h1 className="ToDo-Header">To Do List</h1>
-      <div className="ToDoInputContainer">
-          <input type="text" value={todo} onChange={handleInput} onKeyPress={handleKeyPress} />
-          <button className="ToDo-Add" onClick={createNewToDoItem}>
-            +
-          </button>
-        </div>
-      <div className="ToDo-Container">
-        <div className="ToDo-Content">
-          {list &&
-            list.map((item) => {
-              return <ToDoItem key={item.id} item={item} deleteItem={deleteItem} />;
-            })}
-        </div>
+   return (
+      <div className='ToDo'>
+         <h1 className='ToDo-Header'>To Do List</h1>
+         <div className='ToDoInputContainer'>
+            <input
+               type='text'
+               value={todo}
+               onChange={handleInput}
+               onKeyPress={handleKeyPress}
+            />
+            <button className='ToDo-Add' onClick={createNewToDoItem}>
+               +
+            </button>
+         </div>
+         <div className='ToDo-Container'>
+            <div className='ToDo-Content'>
+               {list &&
+                  list.map((item) => {
+                     return (
+                        <ToDoItem
+                           key={item.id}
+                           item={item}
+                           deleteItem={deleteItem}
+                        />
+                     )
+                  })}
+            </div>
+         </div>
       </div>
-    </div>
-  );
-};
+   )
+}
 
-export default ToDo;
+export default ToDo
