@@ -10,7 +10,7 @@ export default function appReducer(state = initialState, action) {
    switch (action.type) {
       case ADD_ITEM:
          state = {
-            list: [action.payload, ...state.list ],
+            list: [action.payload, ...state.list],
          }
          return state
       case DELETE_ITEM:
